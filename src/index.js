@@ -1,3 +1,4 @@
+
 var displayed = 'films';
 
 $('#toggle').click(function () {
@@ -15,3 +16,10 @@ $('#toggle').click(function () {
   });  
 
 });
+
+
+
+// $.getJSON('film.json').then  (function(data){
+//   console.log(data.films[0]);
+// });
+

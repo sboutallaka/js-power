@@ -9,7 +9,7 @@ const reload  = require ('gulp-livereload');
 const vendors = require ('./vendors.js');
 
 gulp.task ('html', function ()  {
-  gulp.src ('src/*.html')
+  gulp.src (['src/*.html' ,'src/*.json' ])
       .pipe (gulp.dest('build'));
 });
 
