@@ -1,5 +1,17 @@
-console.log($)
+var displayed = 'films';
 
-$.getJSON('http://search.twitter.com/search.json?q=%40bocoup&amp;callback=?', function(tweets){
-  console.log(tweets);
+$('#toggle').click(function () {
+
+  
+  $.get('data.json').then (function (data) {
+    if (displayed == 'films') {
+      $('#text').html(data.series);
+      displayed = 'series';
+    }
+    else {
+     $('#text').html(data.films); 
+     displayed = 'films';
+    }
+  });  
+
 });
